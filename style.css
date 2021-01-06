@@ -1,0 +1,250 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ .container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0.2rem;
+}
+
+
+.img img{
+    width: 710px;
+ 
+}
+ .login-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+form{
+    width: 360px;
+
+}
+
+.avatar{
+    width: 170px;
+}
+
+form h2{
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    margin: 15px 0;;
+    color: black;
+}
+
+ .input-div{
+     /* display: grid; 
+    grid-template-columns: 3% 93%; */
+    margin: 25px 0;
+    padding: 5px 0;
+   
+    /* border-bottom: 2px solid black; */
+} 
+
+
+
+.input-div one{
+    display: grid;
+    grid-template-columns: 3% 93%;
+    margin: 25px 0px;
+    padding: 5px 0;
+  
+    
+} 
+
+.input-div focus{
+    color: black;
+}
+
+.input-div.focus div h5{
+    top= -5px;
+    font-size: 15px;
+}
+
+ .input-div two{
+     position: relative;
+    display: grid;
+    grid-template-columns: 3% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    
+}
+
+.i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input.div > div{
+    position: relative;
+    height: 45px;
+}
+
+ /* .input-div > div h5{ 
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 10px;
+    transition: .3s;
+}  */
+
+#change{
+    animation: color-change 1s infinite;
+}
+@keyframes color-change{
+    0% {color: red;}
+    50%{color: blue;}
+    100%{color: red;}
+}
+
+#this{
+  position: relative;
+    right: 33%;
+    top: -50%;
+    transform: translateY(-50%);
+    color: rgb(49, 44, 44);
+    font-size: 15px;
+    transition: .3s;
+}
+
+#this:hover{
+    color: blue;
+}
+#that:hover{
+    color: blue;
+}
+
+#this.focus{
+    top= -5;
+    font-size: 15px;
+}
+
+#that{
+    position: relative;
+    right: 33%;
+    top: 67.5%;
+    transform: translateY(-50%);
+    color: rgb(49, 44, 44);
+    font-size: 15px;
+    transition: .3s;
+}
+.input{
+   
+    outline: none;
+    background: none;
+}
+
+#INput{
+    outline: none;
+    background: none;
+    border: 0px solid;
+    border-bottom: 2px solid grey;
+    width: 315px;
+}
+
+#INput:active, #INput:focus{
+    border-color:  rgb(1, 212, 65);
+}
+
+#PAssword{
+    outline: none;
+    background: none;
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom : 2px solid grey;
+    width : 315px;
+}
+
+#PAssword:active, #PAssword:focus{
+    border-color: rgb(1, 212, 65);
+}
+
+a{
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+
+a:hover{
+    color: red;
+
+    
+}
+
+.btn{
+    display: block;
+    width: 92%;
+    height: 50%;
+    border-radius: 9px;
+    margin: 1rem;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, rgb(137, 126, 194), #38d39f, #32b);
+    cursor: pointer;
+    font-size: 15px; 
+    padding: 10px;
+    transition: .5s;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+}
+
+/* @keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    40%{
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    80%{
+        -webkit-transform: translateX(50X);
+        transform: translateX(50X);
+    }
+} */
+
+button:after{
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    background: #ff7a59;
+    border-radius: 5px;
+    content: 'flipped';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+
+
+}
+.btn:hover{
+        background-position: left;
+        background-image: linear-gradient(to left,  #32b, #1b795a, rgb(122, 106, 224));
+        color: white;
+        /* animation: bounce 1s; */
+        transform-origin: center bottom;
+        transform: rotateX(-90) translateY(100%);
+   
+       
+}
+
+::placeholder:active{
+    top: -15px;
+    transition: 0.5s;
+    
+} 
